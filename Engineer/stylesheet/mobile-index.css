@@ -58,10 +58,13 @@
 
         section.upper {
             background-position: 0px -25px;
+            /* background: linear-gradient(75deg, rgba(41, 40, 40, 0.705)60%,rgba(0, 0, 0, 0.493)), url('../images/abhijeet-gaikwad-cropped2.jpg') no-repeat fixed; */
+            /* background-position: 90px 90px; */
         }
 
         section.upper h1 {
             font-size: 25px;
+            margin-top: 35px;
             margin-bottom: 10px;
         }
 
