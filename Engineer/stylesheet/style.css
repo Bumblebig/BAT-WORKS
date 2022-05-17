@@ -84,9 +84,9 @@ section.upper {
     margin: 2px auto;
     text-align: center;
     color: white;
-    background: linear-gradient(75deg, rgba(41, 40, 40, 0.705)60%,rgba(0, 0, 0, 0.493)), url('../images/abjat-cropped.jpg') no-repeat fixed;
-    background-size: 100% 100%;
-    background-position: 0px 20px;
+    background: linear-gradient(75deg, rgba(41, 40, 40, 0.705)60%,rgba(0, 0, 0, 0.493)), url('../images/abjat-cropped.jpg') no-repeat scroll;
+    background-size: 100%;
+    background-position: 0px -120px;
 }
 
 section.upper h1 {
