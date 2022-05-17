@@ -1,0 +1,371 @@
+/* \\GENERAL RULE\\ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0px auto;
+    max-width: 1440px;
+    min-width: 373px;
+    width:100%;
+    font-family: 'Roboto',sans-serif;
+    background-color: white;
+}
+
+/* \\HEADER DESIGN\\ */
+
+header {
+    margin: 0px auto;
+    width:90%;
+    padding: 20px;
+    background-color: white;
+    font-family:'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: 900;
+    letter-spacing: -0.1em;
+    color: rgba(0, 0, 0, 0.678);
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1::first-letter{
+    color: rgb(83, 136, 123);
+    font-size: 50px;
+}
+
+ul.nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: 10px;
+}
+
+ul.nav li#about {
+    background-color: #c7d8d159;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ul.nav li, a.header {
+    list-style-type: none;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 19px;
+    text-decoration: none;
+}
+
+ul li:last-child{
+    margin-right: 0px;
+}
+
+
+a.header:hover, a.header:focus {
+    font-weight: 500;
+    color: rgb(49, 139, 112);
+}
+
+a.header:active {
+    font-weight: 400;
+    color:rgb(243, 210, 62);
+}
+
+/* \\ABOUT SECTION DESIGN\\ */
+
+section.about {
+    width:90%;
+    margin: 0px auto;
+    background-color: #fff;
+    padding: 3% 2%;
+}
+
+hr {
+    /* border: none; */
+    width:46.41px;
+    margin: 0px 0px 35px 0px;
+    height: 5px;
+    background-color: #435055;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #435055;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+
+main {
+    width: 100%;
+    padding: 2.5% 1.5%;
+}
+
+main h3 {
+    font-size: 1.4rem;
+    letter-spacing: -0.07;
+    word-spacing: -0.1rem;
+    margin: 50px 0px 25px 0px;
+    color: #435055;
+    padding-bottom: 0px;
+}
+
+main h3:first-child {
+    margin-bottom: 20px;
+}
+
+main h4 {
+    color: #435055;
+    margin-left: 10px;
+}
+
+main p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.562);
+    width: 95%;
+    margin: 8px auto 0px auto;
+    line-height: 1.65;
+}
+
+h3#value {
+    padding-bottom: 10px;
+}
+
+ul.values {
+    width: 95%;
+    color: rgba(0, 0, 0, 0.562);
+    font-size: 17px;
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+ul.values li:first-child {
+    margin-top: 20px;
+}
+
+ul.values li {
+    margin-top: 15px;
+}
+
+/* \\CONTACT SECTION DESIGN\\ */
+
+
+section.contact {
+    background-color: #435055;
+    padding: 6% 6% 3% 6%;
+    color: white;
+}
+
+h2#contact {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    /* margin-bottom: 20px; */
+}
+
+section.contact hr {
+    background-color: white;
+}
+
+main.contact-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10%;
+}
+
+div.con {
+    width: 25%;
+}
+
+section.contact h1 {
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+section.contact h4 {
+    color: #fff;
+}
+
+main.contact-grid p{
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px auto 0px auto;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+main.contact-grid p a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+main.contact-grid p a:hover,main.contact-grid p a:focus {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+main.contact-grid h4 {
+    margin-bottom: 5px;
+}
+
+p.mail {
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+img.logos {
+    display: none;
+}
+
+/* \\FOOTER DESIGN\\ */
+
+footer {
+    text-align: center;
+    font-family: 'Oswald',sans-serif;
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.774);
+}
+
+/* \\RESPONSIVENESS// */
+
+@media only screen and (max-width:870px) {
+
+section.contact {
+    padding: 20px 4% 15px 4%;
+}
+
+main.contact-grid {
+    display: flex;
+    flex-flow: column nowrap;
+    gap:20px;
+}
+
+div.con {
+    width: 100%;
+}
+
+div.con h4 {
+    display: none;
+}
+
+img.logos {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+img.phone2 {
+    visibility: hidden;
+}
+
+}
+
+@media only screen and (max-width:650px) {
+
+    /* HEADER SECTION */
+
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    header h1::first-letter {
+        font-size: 38px;
+    }
+
+    ul.nav li {
+        margin-right: 15px;
+    }
+
+    ul.nav li, a.header {
+        font-size: 16px;
+    }
+
+    /* ABOUT SECTION */
+
+    section.about {
+        width: 85%;
+    }
+
+    h2,h2#contact {
+        font-size: 19px;
+    }
+
+    main {
+        padding: 0px;
+    }
+
+    main h3 {
+        font-size: 18px;
+        margin: 25px 0px 15px 0px;
+    }
+
+    main h3:first-child {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    main h4 {
+        font-size: 16px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    h3#value {
+        font-size: 16.8px;
+        padding-bottom: 0px;
+        word-spacing: 0.01rem;
+        letter-spacing: 0.05em;
+    }
+
+    ul.values {
+        font-size: 16px;
+    }
+
+    /* CONTACT SECTION */
+
+    section.contact {
+        padding: 40px;
+    }
+
+}
+
+@media only screen and  (max-width:530px) {
+
+    header {
+        width: 98%;
+        padding: 20px 3px 20px 20px;
+    }
+
+    ul.nav li {
+        margin-right: 6px;
+    }
+
+    ul.nav li, a.header {
+        font-size: 14px;
+    }
+
+    ul.nav li#about {
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 0px;   
+    }
+
+}

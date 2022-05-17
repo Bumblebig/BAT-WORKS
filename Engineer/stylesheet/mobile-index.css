@@ -1,0 +1,235 @@
+@media only screen and (max-width:870px) {
+
+    section.contact {
+        padding: 20px 4% 15px 4%;
+    }
+    
+    main.contact-grid {
+        display: flex;
+        flex-flow: column nowrap;
+        gap:20px;
+    }
+    
+    div.con {
+        width: 100%;
+    }
+    
+    div.con h4 {
+        display: none;
+    }
+    
+    img.logos {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    
+    img.phone2 {
+        visibility: hidden;
+    }
+    
+    }
+
+    @media only screen and (max-width:700px) {
+
+    
+        header {
+            padding: 20px;
+        }
+    
+        header h1 {
+            font-size: 20px;
+        }
+    
+        header h1::first-letter {
+            font-size: 38px;
+        }
+    
+        ul li {
+            margin-right: 15px;
+        }
+    
+        ul li, a.header {
+            font-size: 16px;
+        }
+
+        h2,h2#contact {
+            font-size: 19px;
+        }
+
+        section.upper {
+            background-position: 0px -25px;
+        }
+
+        section.upper h1 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        section.upper p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        div.serv-grid {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        figure {
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        img.engr {
+            width: 85px;
+            height: 82px;
+        }
+
+        section.about h3 {
+            font-size: 1.2rem;
+            letter-spacing: -0.01;
+        }
+
+        p.position {
+            font-size: 14px;
+        }
+
+        p.desc {
+            font-size: 15.5px;
+            text-indent: 0px;
+        }
+
+        p.more {
+            font-size: 15.8px;
+            text-indent: 10px;
+        }
+
+        section.products {
+            width: 80%;
+        }
+
+        section.products div {
+            width: 25%;
+        }
+
+        div.con p {
+            line-height: 2;
+            letter-spacing: 0.04em;
+        }
+
+        section.contact {
+            padding: 40px;
+        }
+
+    }
+
+    @media only screen and  (max-width:530px) {
+
+        header {
+            width: 98%;
+            padding: 20px 3px 20px 20px;
+        }
+    
+        ul li {
+            margin-right: 6px;
+        }
+    
+        ul li, a.header {
+            font-size: 14px;
+        }
+    
+        ul li#home {
+        background-color: #fff;
+        padding: 0px;
+        border-radius: 0px;   
+        }
+
+        header {
+            padding: 18px;
+        }
+    
+        header h1 {
+            font-size: 18px;
+        }
+    
+        header h1::first-letter {
+            font-size: 36px;
+        }
+    
+
+        h2,h2#contact {
+            font-size: 18px;
+        }
+
+        section.upper {
+            background-position: 0px -35px;
+            padding: 60px 10px 80px 10px;
+        }
+
+        section.upper h1 {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        section.upper p {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        div.serv-grid {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        figure {
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        img.engr {
+            width: 75px;
+            height: 72px;
+        }
+
+        section.about h3 {
+            font-size: 1rem;
+            letter-spacing: 0;
+        }
+
+        p.position {
+            font-size: 12px;
+        }
+
+        p.desc {
+            font-size: 14px;
+            text-indent: 0px;
+        }
+
+        p.more {
+            font-size: 14.5px;
+            text-indent: 10px;
+        }
+
+        section.products {
+            width: 80%;
+        }
+
+        section.products div {
+            width: 28%;
+        }
+
+        /* div.con p {
+            line-height: 2;
+            letter-spacing: 0.04em;
+        } */
+    
+    }

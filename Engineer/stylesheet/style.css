@@ -1,0 +1,376 @@
+/* \\GENERAL RULE\\ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0px auto;
+    max-width: 1440px;
+    min-width: 373px;
+    width:100%;
+    font-family: 'Roboto',sans-serif;
+    background-color: white;
+}
+
+
+/* \\HEADER DESIGN\\ */
+
+header {
+    margin: 0px auto;
+    width:90%;
+    padding: 20px;
+    background-color: white;
+    font-family:'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: 900;
+    letter-spacing: -0.1em;
+    color: rgba(0, 0, 0, 0.678);
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1::first-letter{
+    color: rgb(83, 136, 123);
+    font-size: 50px;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: 10px;
+}
+
+ul li#home {
+    background-color: #c7d8d159;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ul li, a.header {
+    list-style-type: none;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 19px;
+    text-decoration: none;
+}
+
+ul li:last-child{
+    margin-right: 0px;
+}
+
+
+a.header:hover, a.header:focus {
+    font-weight: 500;
+    color: rgb(49, 139, 112);
+}
+
+a.header:active {
+    font-weight: 400;
+    color:rgb(243, 210, 62);
+}
+
+/* \\SECTION DESIGN\\ */
+
+section.upper {
+    width:100%;
+    padding: 10% 0% 10% 0%;
+    margin: 2px auto;
+    text-align: center;
+    color: white;
+    background: linear-gradient(75deg, rgba(41, 40, 40, 0.705)60%,rgba(0, 0, 0, 0.493)), url('../images/abjat-cropped.jpg') no-repeat fixed;
+    background-size: 100% 100%;
+    background-position: 0px 20px;
+}
+
+section.upper h1 {
+    margin-bottom: 15px;
+    letter-spacing: 0.05;
+    word-spacing: em;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+section.upper p {
+    margin-bottom: 30px;
+    word-spacing: 0.06em;
+    letter-spacing: 0.18em;
+    opacity: 80%;
+    font-family:  'Oswald' sans-serif;
+    font-size: 18px;
+}
+
+/* \\SERVICES SECTION DESIGN\\ */
+
+section.services {
+    width:90%;
+    margin: 25px auto 0px auto;
+    background-color: white;
+    padding: 3% 2%;
+    padding-bottom: 5%;
+}
+ 
+
+h2 {
+    color: #435055;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+
+hr {
+    width:46.41px;
+    margin: 0px 0px 35px 0px;
+    height: 5px;
+    background-color: #435055;
+    border-radius: 5px;
+}
+
+div.serv-grid {
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap:5%;
+    align-items: start;
+}
+
+figure {
+    background-color: #c7d8d159;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+figure div.box {
+    width: 100%;
+    min-height: 100px;
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: gray;
+}
+
+div.box1 {
+    background: url('../images/white-gen.jpg') repeat scroll center;
+    background-size: 100% 100%;
+}
+
+div.box2 {
+    background: url('../images/pexels-cottonbro-7541352.jpg') repeat scroll center;
+    background-size: 100%;
+}
+
+div.box3 {
+    background: url('../images/pexels-pixabay-414579.jpg') repeat scroll bottom center;
+    background-size: 100% 100%;
+}
+
+h3 {
+    text-align: center;
+    color: #435055;
+    font-size: 24px;
+    letter-spacing: 0.08em;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
+}
+
+/* \\ABOUT SECTION DESIGN\\ */
+
+section.about {
+    width:90%;
+    margin: 0px auto;
+    background-color: #fff;
+    padding: 3% 2%;
+}
+
+main.profile{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+img.engr {
+    width: 90px;
+    height: 87px;
+    border-radius: 50%;
+    border: 2px solid #435055;
+}
+
+section.about h3 {
+    text-align: left;
+    font-size: 1.4rem;
+    letter-spacing: -0.07;
+    word-spacing: 0;
+    margin: 0px 0px 5px 0px;
+}
+
+.desc {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.562);
+    width: 95%;
+    margin: 20px auto 0px auto;
+    text-indent: 10px;
+    line-height: 1.8;
+}
+
+p.position {
+    color: rgba(0, 0, 0, 0.37);
+    font-weight: 400;
+}
+
+p.more {
+    width:95%;
+    margin-top: 20px;
+    text-indent: 30px; 
+}
+
+p.more a {
+    color: #435055;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom:1px solid #435055;
+}
+
+p.more a:hover, p.amore a:focus {
+    font-weight: 500;
+    color: rgb(49, 139, 112);
+    border-bottom: 1px solid rgb(49, 139, 112);
+}
+
+p.more a:active {
+    color:rgb(243, 210, 62);
+    border-bottom: 1px solid rgb(243, 210, 62);
+}
+
+img.arrow {
+    margin-left: 4px;
+    width: 30px;
+    filter: invert(27%) sepia(20%) saturate(353%) hue-rotate(151deg) brightness(99%) contrast(87%);
+}
+
+p.more:hover img, p.more:focus img {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(72%) saturate(324%) hue-rotate(111deg) brightness(91%) contrast(94%);
+}
+
+p.more:active img {
+    filter: brightness(0) saturate(100%) invert(81%) sepia(68%) saturate(494%) hue-rotate(348deg) brightness(101%) contrast(91%);
+}
+
+/* \\PRODUCT SECTION DESIGN// */
+
+section.products {
+    margin: 35px auto;
+    width: 75%;
+    padding: 10px 25px 10px 25px;
+    background-color: #c7d8d144;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+
+section.products div {
+    width: 20%;
+}
+
+img.prod-logo {
+    width: 100%;
+    /* filter: invert(27%) sepia(20%) saturate(353%) hue-rotate(151deg) brightness(99%) contrast(87%); */
+    opacity: 48%;
+}
+
+/* \\CONTACT SECTION DESIGN\\ */
+
+
+section.contact {
+    background-color: #435055;
+    padding: 6% 6% 3% 6%;
+    color: white;
+}
+
+h2#contact {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    /* margin-bottom: 20px; */
+}
+
+section.contact hr {
+    background-color: white;
+}
+
+main.contact-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10%;
+}
+
+div.con {
+    width: 25%;
+}
+
+section.contact h1 {
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+section.contact h4 {
+    color: #fff;
+}
+
+main.contact-grid p{
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px auto 0px auto;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+main.contact-grid p a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+main.contact-grid p a:hover,main.contact-grid p a:focus {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+main.contact-grid h4 {
+    margin-bottom: 5px;
+}
+
+p.mail {
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+img.logos {
+    display: none;
+}
+
+/* \\FOOTER DESIGN\\ */
+
+footer {
+    text-align: center;
+    font-family: 'Oswald',sans-serif;
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.774);
+}
