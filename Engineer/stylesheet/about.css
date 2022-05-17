@@ -44,7 +44,7 @@ ul.nav li {
     display: inline-block;
     margin-right: 20px;
     position: relative;
-    top: 10px;
+    top: 5px;
 }
 
 ul.nav li#about {
