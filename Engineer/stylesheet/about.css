@@ -221,6 +221,10 @@ main.contact-grid h4 {
     margin-bottom: 5px;
 }
 
+h4.email {
+    margin-top: 20px;
+}
+
 p.mail {
     margin-top: 0px;
     padding-bottom: 20px;

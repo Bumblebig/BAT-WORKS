@@ -163,19 +163,19 @@ div.box1 {
 }
 
 div.box2 {
-    background: url('../images/pexels-cottonbro-7541352.jpg') repeat scroll center;
-    background-size: 100%;
+    background: url('../images/pexels-pixabay-414579.jpg') repeat scroll center;
+    background-size: 100% 100%;
 }
 
 div.box3 {
-    background: url('../images/pexels-pixabay-414579.jpg') repeat scroll bottom center;
+    background: url('../images/hauling.jpg') no-repeat scroll bottom center;
     background-size: 100% 100%;
 }
 
 h3 {
     text-align: center;
     color: #435055;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 0.08em;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 30px;
@@ -289,6 +289,10 @@ img.prod-logo {
     opacity: 48%;
 }
 
+img.big {
+    width:70%;
+}
+
 /* \\CONTACT SECTION DESIGN\\ */
 
 
@@ -357,8 +361,12 @@ main.contact-grid h4 {
     margin-bottom: 5px;
 }
 
+h4.email {
+    margin-top: 20px;
+}
+
 p.mail {
-    margin-top: 0px;
+    margin-top: 20px;
     padding-bottom: 20px;
 }
 
