@@ -130,7 +130,7 @@
         }
 
         div.con p {
-            line-height: 2;
+            line-height: 1.8;
             letter-spacing: 0.04em;
         }
 
@@ -240,10 +240,10 @@
             width: 28%;
         }
 
-        /* div.con p {
-            line-height: 2;
-            letter-spacing: 0.04em;
-        } */
+       footer p {
+           font-size: 12px;
+           word-spacing: 0.2em;;
+       }
     
     }
 
