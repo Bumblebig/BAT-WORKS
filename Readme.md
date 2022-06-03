@@ -1,6 +1,6 @@
 # BAT TECHNICAL WORKS WEBSITE
 
-These are the files I used to build the BAT website.
+These are the files used to build the BATTCH WORKS website.
 
 ## Languages Used are:
 
