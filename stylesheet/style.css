@@ -13,6 +13,7 @@ body {
     width:100%;
     font-family: 'Roboto',sans-serif;
     background-color: white;
+    overflow-x: hidden;
 }
 
 
@@ -74,6 +75,113 @@ a.header:hover, a.header:focus {
 a.header:active {
     font-weight: 400;
     color:rgb(243, 210, 62);
+}
+
+div.menu {
+    width: 30px;
+    padding: 1px;
+    display: none;
+    flex-flow: column;
+    gap: 3px;
+    position: relative;
+    top:5px;
+    cursor: pointer;
+    transition: all 0.8s ease-out;
+}
+
+div.cross {
+    display: none;
+    width: 65px;
+    min-width: 60px;
+    height: 45px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    padding: 0px;
+    top: 32px;
+    /* left: 86%; */
+    left: 440px;
+}
+
+img.close {
+    position: relative;
+    left: 5px;
+    width: 50px;
+    height: 30px;
+}
+
+
+section.dropdown {
+    display: none;
+    width: 100vw;
+    min-width: 375px;
+    padding: 10px 0px 20px 0px;
+    background-color: #fff;
+    filter: blur(30%);
+    backdrop-filter: blur(40%);
+    position: absolute;
+    z-index: 100;
+    border: 1px solid #435055;
+}
+
+div.menu:hover, div.menu:focus {
+    transform: scale(1.1);
+}
+
+div.menu:active {
+    transform: scale(0.9);
+}
+
+div.bar {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+ul.dropmenu li {
+    display:block;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+ul.dropmenu li#home {
+    font-size: 19px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    background: none;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.527);
+}
+
+ul.dropmenu li#about {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.527);
+}
+
+ul.dropmenu li#contact {
+    padding-top: 10px;
+}
+
+ul.dropmenu li, a.drop {
+    list-style-type: none;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 19px;
+    text-decoration: none;
+}
+
+
+ul.dropmenu a.drop:hover, ul.dropmenu a.drop:drop {
+    font-weight: 500;
+    color: rgb(49, 139, 112);
+}
+
+a.drop:active {
+    font-weight: 400;
+    color:rgb(243, 210, 62);
+}
+ul.dropmenu li#home:active,ul.dropmenu li#about:active, ul.dropmenu li#contact:active {
+    background-color: #c7d8d159;
 }
 
 /* \\SECTION DESIGN\\ */
