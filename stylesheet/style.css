@@ -115,7 +115,7 @@ section.dropdown {
     display: none;
     width: 100vw;
     min-width: 375px;
-    padding: 10px 0px 20px 0px;
+    padding: 0px;
     background-color: #fff;
     filter: blur(30%);
     backdrop-filter: blur(40%);
@@ -142,36 +142,32 @@ ul.dropmenu li {
     display:block;
     width: 100%;
     text-align: center;
-    padding: 0px;
 }
 ul.dropmenu li#home {
     font-size: 19px;
-    margin-bottom: 0px;
-    margin-top: 5px;
+    padding: 15px 0px 10px 0px;
     background: none;
-    padding-bottom: 10px;
     border-bottom: 0.5px solid rgba(128, 128, 128, 0.527);
 }
 
 ul.dropmenu li#about {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px;
     border-bottom: 0.5px solid rgba(128, 128, 128, 0.527);
 }
 
 ul.dropmenu li#contact {
-    padding-top: 10px;
+    padding: 10px 0px 20px 0px;
 }
 
 ul.dropmenu li, a.drop {
     list-style-type: none;
     color: rgba(0, 0, 0, 0.678);
-    font-size: 19px;
+    font-size: 16px;
     text-decoration: none;
 }
 
 
-ul.dropmenu a.drop:hover, ul.dropmenu a.drop:drop {
+ul.dropmenu a.drop:hover, ul.dropmenu a.drop:focus {
     font-weight: 500;
     color: rgb(49, 139, 112);
 }
