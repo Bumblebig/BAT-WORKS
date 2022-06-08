@@ -13,7 +13,9 @@ body {
     width:100%;
     font-family: 'Roboto',sans-serif;
     background-color: white;
+    overflow-x: hidden;
 }
+
 
 /* \\HEADER DESIGN\\ */
 
@@ -40,20 +42,20 @@ header h1::first-letter{
     font-size: 50px;
 }
 
-ul.nav li {
+ul li {
     display: inline-block;
     margin-right: 20px;
     position: relative;
     top: 5px;
 }
 
-ul.nav li#about {
+ul li.contact {
     background-color: #c7d8d159;
     padding: 5px;
     border-radius: 5px;
 }
 
-ul.nav li, a.header {
+ul li, a.header {
     list-style-type: none;
     color: rgba(0, 0, 0, 0.678);
     font-size: 19px;
@@ -90,6 +92,22 @@ img.bar {
     filter: brightness(0) saturate(100%) invert(29%) sepia(3%) saturate(2133%) hue-rotate(151deg) brightness(94%) contrast(86%);
 }
 
+div.cross {
+    display: none;
+    width: 30px;
+    padding: 0px;
+    height: 45px;
+    background-color: #fff;
+}
+
+img.close {
+    width: 100%;
+    position: relative;
+    top:11px;
+    filter: brightness(0) saturate(100%) invert(29%) sepia(3%) saturate(2133%) hue-rotate(151deg) brightness(94%) contrast(86%);
+}
+
+
 section.dropdown {
     display: none;
     width: 100vw;
@@ -111,29 +129,13 @@ div.menu:active {
     transform: scale(0.9);
 }
 
-div.cross {
-    display: none;
-    width: 30px;
-    padding: 0px;
-    height: 45px;
-    background-color: #fff;
-}
-
-img.close {
-    width: 100%;
-    position: relative;
-    top:11px;
-    filter: brightness(0) saturate(100%) invert(29%) sepia(3%) saturate(2133%) hue-rotate(151deg) brightness(94%) contrast(86%);
-}
-
 ul.dropmenu li {
     display:block;
     width: 100%;
     text-align: center;
-    padding: 0px;
-    font-size: 16px;
 }
 ul.dropmenu li#home {
+    font-size: 19px;
     padding: 15px 0px 10px 0px;
     background: none;
     border-bottom: 0.5px solid rgba(128, 128, 128, 0.527);
@@ -169,17 +171,26 @@ ul.dropmenu li#home:active,ul.dropmenu li#about:active, ul.dropmenu li#contact:a
     background-color: #c7d8d159;
 }
 
-/* \\ABOUT SECTION DESIGN\\ */
+/* CONTACT SECTION */
 
-section.about {
+section {
     width:90%;
     margin: 0px auto;
     background-color: #fff;
-    padding: 3% 2% 60px 2%;
+}
+
+section.description {
+    padding: 60px 30px;
+}
+address {
+    text-indent: 35px;
+}
+
+section.phone {
+    padding:  20px 30px;
 }
 
 hr {
-    /* border: none; */
     width:46.41px;
     margin: 0px 0px 35px 0px;
     height: 5px;
@@ -192,34 +203,11 @@ h2 {
     font-weight: 700;
     margin-bottom: 5px;
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     letter-spacing: 0.03em;
 }
 
-main {
-    width: 100%;
-    padding: 2.5% 1.5%;
-}
-
-main h3 {
-    font-size: 1.4rem;
-    letter-spacing: -0.07;
-    word-spacing: -0.1rem;
-    margin: 50px 0px 25px 0px;
-    color: #435055;
-    padding-bottom: 0px;
-}
-
-main h3:first-child {
-    margin-bottom: 20px;
-}
-
-main h4 {
-    color: #435055;
-    margin-left: 10px;
-}
-
-main p {
+p, address {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.562);
     width: 95%;
@@ -227,105 +215,31 @@ main p {
     line-height: 1.65;
 }
 
-h3#value {
-    padding-bottom: 10px;
-}
-
-ul.values {
-    width: 95%;
-    color: rgba(0, 0, 0, 0.562);
-    font-size: 17px;
-    list-style-type: none;
-    margin-left: 25px;
-}
-
-ul.values li:first-child {
-    margin-top: 20px;
-}
-
-ul.values li {
-    margin-top: 15px;
-}
-
-/* \\CONTACT SECTION DESIGN\\ */
-
-
-section.contact {
-    background-color: #435055;
-    padding: 6% 6% 3% 6%;
-    color: white;
-}
-
-h2#contact {
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    /* margin-bottom: 20px; */
-}
-
-section.contact hr {
-    background-color: white;
-}
-
-main.contact-grid {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 10%;
-}
-
-div.con {
-    width: 25%;
-}
-
-section.contact h1 {
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-}
-
-section.contact h4 {
-    color: #fff;
-}
-
-main.contact-grid p{
-    color: #fff;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-    margin: 10px auto 0px auto;
-    line-height: 1.5;
-    font-size: 14px;
-}
-
-main.contact-grid p a:link {
-    color: #fff;
-    text-decoration: none;
-}
-
-main.contact-grid p a:hover,main.contact-grid p a:focus {
-    font-weight: 500;
+p.number a:link, p.mail a:link {
+    color: #435055;
+    cursor: pointer;
     text-decoration: underline;
+    text-indent: 30px;
 }
 
-main.contact-grid h4 {
-    margin-bottom: 5px;
+p.number a:hover, p.number a:focus, p.mail a:hover, p.mail a:focus {
+    color: rgb(49, 139, 112);
+    border-bottom: 1px dashed rgb(49, 139, 112);
 }
 
-h4.email {
-    margin-top: 20px;
+section.mail {
+    padding: 60px 30px;
 }
 
-p.mail {
-    margin-top: 0px;
-    padding-bottom: 20px;
+section.social {
+    padding: 10px 30px;
 }
 
-img.logos {
-    display: none;
+p.fb a:link, p.whatsapp a:link {
+    color: #435055;
+    text-decoration: underline;
+    font-style: oblique;
+    font-weight: 300;
 }
 
 /* \\FOOTER DESIGN\\ */
@@ -337,42 +251,14 @@ footer {
     color:rgba(0, 0, 0, 0.774);
 }
 
-/* \\RESPONSIVENESS// */
-
-@media only screen and (max-width:870px) {
-header {
-    padding: 20px;
-}
-section.contact {
-    padding: 20px 4% 15px 4%;
+footer p {
+    font-size: 12px;
+    word-spacing: 0.2em;;
 }
 
-main.contact-grid {
-    display: flex;
-    flex-flow: column nowrap;
-    gap:20px;
-}
+/* RESPONSIVENESS DESIGN */
 
-div.con {
-    width: 100%;
-}
-
-div.con h4 {
-    display: none;
-}
-
-img.logos {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-img.phone2 {
-    visibility: hidden;
-}
-
-}
-
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:700px){
     header {
         padding: 20px;
     }
@@ -391,19 +277,25 @@ img.phone2 {
 
     ul li, a.header {
         font-size: 16px;
+    } 
+    h2 {
+        font-size: 18px;
     }
 
-    h2,h2#contact {
-        font-size: 19px;
+    p,address {
+        font-size: 16px;
+        width: 90%;
     }
 }
 
 @media only screen and (max-width:650px) {
 
-    /* HEADER SECTION */
-
     header {
         padding: 20px;
+    }
+
+    header ul {
+        display: block;
     }
 
     h1 {
@@ -414,66 +306,19 @@ img.phone2 {
         font-size: 38px;
     }
 
-    /* ABOUT SECTION */
-
-    section.about {
-        width: 85%;
+    address {
+        text-indent: 0px;
     }
-
-    h2,h2#contact {
-        font-size: 19px;
-    }
-
-    main {
-        padding: 0px;
-    }
-
-    main h3 {
-        font-size: 18px;
-        margin: 25px 0px 15px 0px;
-    }
-
-    main h3:first-child {
-        margin-top: 15px;
-        margin-bottom: 10px;
-    }
-
-    main h4 {
-        font-size: 16px;
-    }
-
-    main p {
-        font-size: 16px;
-    }
-
-    h3#value {
-        font-size: 16.8px;
-        padding-bottom: 0px;
-        word-spacing: 0.01rem;
-        letter-spacing: 0.05em;
-    }
-
-    ul.values {
-        font-size: 16px;
-    }
-
-    /* CONTACT SECTION */
-
-    section.contact {
-        padding: 40px;
-    }
-
-    div.con p {
-        line-height: 1.8;
-        letter-spacing: 0.04em;
-    }
-
 }
 
 @media only screen and  (max-width:530px) {
 
     header {
         width: 98%;
+        padding: 20px 3px 20px 20px;
+    }
+
+    header {
         padding: 18px;
     }
 
@@ -481,27 +326,22 @@ img.phone2 {
         display: none;
     }
 
+    header h1 {
+        font-size: 18px;
+    }
+
+    header h1::first-letter {
+        font-size: 36px;
+    }
+
     div.menu {
         display: block;
-    }
-
-    ul.nav li {
-        margin-right: 6px;
-    }
-
-    ul.nav li, a.header {
-        font-size: 14px;
-    }
-
-    ul.nav li#about {
-    background-color: #fff;
-    padding: 0px;
-    border-radius: 0px;   
     }
 
     footer p {
         font-size: 12px;
         word-spacing: 0.2em;;
     }
+    
 
 }

@@ -151,14 +151,8 @@
             display: none;
         }
     
-        ul li, a.header {
-            font-size: 14px;
-        }
-    
-        ul li#home {
-        background-color: #fff;
-        padding: 0px;
-        border-radius: 0px;   
+        div.menu {
+            display: block;
         }
 
         header {
@@ -170,7 +164,7 @@
         } 
 
         div.menu {
-            display: flex;
+            display: block;
         }
     
         header h1 {
@@ -255,18 +249,6 @@
     
     }
 
-@media only screen and (max-width:494px) {
-    div.cross {
-        left: 403px;
-    }
-}
-
-@media only screen and (max-width:458px) {
-    div.cross {
-        left: 375px;
-    }
-}
-
 @media only screen and (max-width:430px) {
 
     section.upper {
@@ -274,16 +256,4 @@
         background-position: 0px 0px; 
     }
 
-}
-
-@media only screen and (max-width:428px) {
-    div.cross {
-        left: 350px;
-    }
-}
-
-@media only screen and (max-width:403px) {
-    div.cross {
-        left: 320px;
-    }
 }
